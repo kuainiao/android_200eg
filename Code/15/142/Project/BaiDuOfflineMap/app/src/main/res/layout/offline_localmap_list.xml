@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dip">
+    <!--标题-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/text_title"/>
+    <!--更新文字-->
+    <TextView
+        android:id="@+id/update"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#FF0000" />
+    <!--显示进度-->
+    <TextView
+        android:id="@+id/ratio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="" />
+    <!--删除按钮-->
+    <Button
+        android:id="@+id/remove"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="@drawable/delete_btn" />
+
+</LinearLayout>

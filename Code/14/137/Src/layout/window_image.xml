@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <!--显示在左侧的图片-->
+    <ImageView 
+        android:id="@+id/left_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/left_img"
+        />
+    <!--移动中的图片-->
+     <ImageView 
+        android:id="@+id/move_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/move_img"
+        />
+    <!--显示在右侧的图片-->
+    <ImageView 
+        android:id="@+id/right_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/right_img"
+        />
+    
+   
+
+</LinearLayout>

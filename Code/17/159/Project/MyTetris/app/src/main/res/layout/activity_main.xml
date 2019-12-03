@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    android:gravity="top" >
+    <!-- 线性布局默认竖向布局   layout_width,layout_height设置布局宽高  mathch_parent为设置最长 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <!-- 线性布局默认竖向布局此布局占位用     wrap_parent为自适应大小  layout_weight为设置占用比例 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+        </LinearLayout>
+        <!-- 线性布局默认竖向布局   gravity设置位置 center_vertival横向中间对其 orientation设置线性布局内部横向还是纵向 vertical为横向排列 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+            <!-- 按钮控件 id为设置 button名称 ,padding设置内部边距 ,visibility设置隐藏还是显示控件 gone隐藏不占位置 -->
+            <Button
+                android:id="@+id/button_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/green_button_pressed"
+                android:padding="10dp"
+                android:text="继续游戏"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:visibility="gone" />
+            <!-- 开始游戏按钮  background设置按钮背景图片,@drawable/green_button_pressed为设置图片为drawable文件夹下 名称为green_button_pressed的图片 -->
+            <Button
+                android:id="@+id/button_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/green_button_pressed"
+                android:padding="10dp"
+                android:text="开始游戏"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+            <!-- 设置按钮 text设置button文子,textColor设置文字颜色,textSize设置字号 -->
+            <Button
+                android:id="@+id/button_setup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/green_button_pressed"
+                android:padding="10dp"
+                android:text="游戏设置"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+            <!-- 高分排行按钮 -->
+            <Button
+                android:id="@+id/button_high"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/green_button_pressed"
+                android:padding="10dp"
+                android:text="高分排行"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <!-- 线性布局默认竖向布局此布局占位用 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 显示文字控件  layout_centerHorizontal显示到控件中间对齐 layout_alignParentBottom在布局底部 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:text="明日科技 友情出品"
+        android:textColor="#aaa" />
+</RelativeLayout>

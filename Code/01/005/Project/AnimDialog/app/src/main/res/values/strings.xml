@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">动画对话框</string>
+    <string name="text_title1">提示</string>
+    <string name="text_title2">您确定要退出58同城吗？</string>
+    <string name="text_btn_determine">确定</string>
+    <string name="text_btn_cancel">取消</string>
+</resources>

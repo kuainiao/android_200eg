@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="基本设置" >
+<!--PreferenceCategory用于分组  -->
+    <PreferenceCategory android:title="基本设置" >
+       <!-- CheckBoxPreference选择项 -->
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="bEnableMusic"
+            android:summaryOff="背景音乐关闭"
+            android:summaryOn="背景音乐开启"
+            android:title="游戏是否开启背景音乐" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="bEnableEffect"
+            android:summaryOff="游戏音效关闭"
+            android:summaryOn="游戏音效开启"
+            android:title="游戏是否开启音效" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="bShadow"
+            android:summaryOff="不显示影子"
+            android:summaryOn="显示半透明影子"
+            android:title="移动方块的影子" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="bContrarotate"
+            android:summaryOff="顺时针转动"
+            android:summaryOn="逆时针转动"
+            android:title="方块转动方向" />
+        <!--列表选择，弹出对话框供选择  -->
+        <ListPreference
+            android:defaultValue="back1.jpg"
+            android:dialogTitle="背景图片"
+            android:entries="@array/list_image"
+            android:entryValues="@array/list_image_value"
+            android:key="backImage"
+            android:summary="选择游戏中的背景图片"
+            android:title="背景图片类型" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bj"
+    android:fitsSystemWindows="true"
+    tools:context="com.mingrisoft.threaddownload.MainActivity">
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/image_qq"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="invisible"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/image"/>
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="0dp"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:max="100"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/button"
+            android:background="@null"
+            android:onClick="down"/>
+    </LinearLayout>
+</RelativeLayout>

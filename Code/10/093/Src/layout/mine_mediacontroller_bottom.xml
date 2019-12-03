@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 控制器下部分 -->
+    <LinearLayout
+        android:id="@+id/rl_med"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#77000000">
+        <!-- 播放按钮 -->
+        <ImageButton
+            android:id="@+id/mediacontroller_play_pause"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/mediacontroller_button"
+            android:contentDescription="@string/mediacontroller_play_pause"
+            android:scaleType="centerInside"
+            android:src="@drawable/mediacontroller_pause" />
+        <!-- 播放进度 -->
+        <TextView
+            android:id="@+id/mediacontroller_time_current"
+            style="@style/MediaController_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_time" />
+        <!-- 进度条 -->
+        <SeekBar
+            android:id="@+id/mediacontroller_seekbar"
+            style="@style/MediaController_SeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:max="1000" />
+        <!-- 视频时间 -->
+        <TextView
+            android:id="@+id/mediacontroller_time_total"
+            style="@style/MediaController_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_time" />
+
+        <ImageButton
+            android:id="@+id/mediacontroller_change"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/mediacontroller_button"
+            android:scaleType="centerInside"
+            android:src="@mipmap/change" />
+    </LinearLayout>
+</LinearLayout>

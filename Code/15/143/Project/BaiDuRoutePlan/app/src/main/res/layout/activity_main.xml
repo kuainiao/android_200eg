@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical" >
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dip"
+
+    android:background="#5194DA"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/drive"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="2dp"
+        android:layout_weight="1.0"
+        android:onClick="searchButtonProcess"
+        android:background="@drawable/drive_btn_bg" />
+
+    <Button
+        android:id="@+id/transit"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="2dp"
+        android:layout_weight="1.0"
+        android:onClick="searchButtonProcess"
+        android:background="@drawable/bus_btn_bg"/>
+
+    <Button
+        android:id="@+id/walk"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="2dp"
+        android:layout_weight="1.0"
+        android:onClick="searchButtonProcess"
+        android:background="@drawable/walk_btn_bg" />
+    <Button
+        android:id="@+id/bike"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="2dp"
+        android:layout_weight="1.0"
+        android:onClick="searchButtonProcess"
+        android:background="@drawable/riding_btn_bg" />
+</LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起点：" />
+
+        <EditText
+            android:id="@+id/start"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="北京" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="终点：" />
+
+        <EditText
+            android:id="@+id/end"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="上海" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--设置显示地图控件-->
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginBottom="10dip" >
+
+        <Button
+            android:id="@+id/pre"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/pre_"
+            android:onClick="nodeClick" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/next_"
+            android:onClick="nodeClick" />
+    </LinearLayout>
+</RelativeLayout>
+
+</LinearLayout>

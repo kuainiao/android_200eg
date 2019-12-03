@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myAttr = "http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drag_layout"
+    myAttr:rightChildCount = "3"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <LinearLayout
+            android:id="@+id/line_name"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:text="小红"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:singleLine="true"
+                android:text="你妈叫你回家吃饭去呢，找不到你，让我转告你"
+                android:textColor="#55000000"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="下午1:20"
+            android:textColor="#55000000"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/msg_point"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_below="@id/text_time"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/yuan"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="12dp"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:text="50"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:id="@+id/person_image"
+            android:src="@mipmap/image"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

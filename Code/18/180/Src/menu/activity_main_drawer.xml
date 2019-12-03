@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mr_ts"
+        android:icon="@mipmap/mrkj_ts"
+        android:title="特色板块" />
+    <item
+        android:id="@+id/mr_sp"
+        android:icon="@mipmap/mrkj_sp"
+        android:title="视频课程" />
+    <item
+        android:id="@+id/mr_ds"
+        android:icon="@mipmap/mrkj_ds"
+        android:title="读书" />
+    <item
+        android:id="@+id/mr_sq"
+        android:icon="@mipmap/mrkj_sq"
+        android:title="社区" />
+    <item
+        android:id="@+id/mr_gy"
+        android:icon="@mipmap/mrkj_gy"
+        android:title="关于我们" />
+</menu>

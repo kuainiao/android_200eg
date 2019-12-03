@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">猜牌游戏</string>
+    <string name="start">洗牌</string>
+    <string name="end">退出</string>
+</resources>

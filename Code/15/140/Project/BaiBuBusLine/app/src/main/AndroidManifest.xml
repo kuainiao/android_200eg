@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mingrisoft.baibubusline">
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--读取launcher.db内容的权限定义-->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!--获取锁屏权限-->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--获取运行任务的信息-->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--允许应用程序写入到外部存储器-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许应用程序读取或写入系统设置-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--设置定位服务-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+        <!--在value中设置开发者申请的AK-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="kGpATNvL3CNPfF5y26unCMRthV5P8zaf" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

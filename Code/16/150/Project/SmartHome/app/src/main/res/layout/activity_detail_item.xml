@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:alpha="0.6"
+    android:background="@android:color/white">
+<TextView
+    android:id="@+id/detail_btn_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:text="吸顶灯"
+    android:textSize="17sp"
+    android:layout_marginLeft="15dp"/>
+    <com.mingrisoft.smarthome.tool.SwitchView
+        android:id="@+id/switch_btn"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+</RelativeLayout>

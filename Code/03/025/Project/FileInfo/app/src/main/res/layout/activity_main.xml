@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:text="文件路径：SD卡根目录/filedemo.txt" />
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ck_bj"
+            android:textColor="@android:color/white"
+            android:layout_margin="10dp"
+            />
+       </RelativeLayout>
+
+</LinearLayout>
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:gravity="top"
+        android:padding="10dp"
+        android:hint="输入想要保存的文本内容"
+        android:background="@drawable/bg"/>
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg1"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"
+        android:text="内容写入SD卡文档" />
+
+
+</LinearLayout>

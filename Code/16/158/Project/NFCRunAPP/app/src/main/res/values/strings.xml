@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NFC识别开启自定义应用</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_auto_run_application">自动运行Android应用程序</string>
+    <string name="title_activity_installed_application_list">选择已安装应用程序</string>
+</resources>

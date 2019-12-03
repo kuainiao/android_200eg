@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">语音发短信</string>
+    <string name="show">请说“发短信给XX(停顿一秒)短信内容是(停顿一秒)(短信内容)，如“发短信给Tom(停顿一秒)短信内容是(停顿一秒)你的jerry在找你”</string>
+</resources>

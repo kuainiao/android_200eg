@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- CoordinatorLayout:协调布局,协调子控件的行为 -->
+<!-- android:fitsSystemWindows：设为true，适应系统窗口 -->
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.mingrisoft.collapsingtoolbarlayout.MainActivity">
+    <!-- AppBarLayout：相当于竖直排列的线性布局 -->
+    <!-- 具有滑动手势的行为，但需要在以CoordinatorLayout -->
+    <!-- 为父布局的布局中使用 -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:fitsSystemWindows="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <!-- CollapsingToolbarLayout：用来包装ToolBar来使它 -->
+        <!-- 实现折叠效果，通常用作AppBarLayout的子布局 -->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary">
+            <!-- 背景图片 -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_collapseParallaxMultiplier="0.5"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"
+                android:scaleType="fitXY"
+                android:src="@mipmap/mrkj_head"/>
+            <!-- ToolBar用来替代ActionBar -->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/content_scrolling" />
+</android.support.design.widget.CoordinatorLayout>

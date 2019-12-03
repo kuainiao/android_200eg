@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mingrisoft.downmenu.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程分类"
+                android:layout_centerInParent="true"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#000000"
+               android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/button_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+            android:id="@+id/select_1"
+            android:text="语言分类"
+            style="@style/menu" />
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="#000000"/>
+            <TextView
+                android:id="@+id/select_2"
+                android:text="类型"
+                style="@style/menu" />
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="#000000"/>
+            <TextView
+                android:id="@+id/select_3"
+                android:text="热门"
+                style="@style/menu" />
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="#000000"/>
+            <TextView
+                android:id="@+id/select_4"
+                android:text="难易"
+                style="@style/menu" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/tag_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+</RelativeLayout>

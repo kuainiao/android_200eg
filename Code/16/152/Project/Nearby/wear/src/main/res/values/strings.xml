@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">手机与手表通讯</string>
+    <string name="one">美食</string>
+    <string name="two">饮品</string>
+    <string name="three">购物</string>
+    <string name="four">休闲</string>
+</resources>

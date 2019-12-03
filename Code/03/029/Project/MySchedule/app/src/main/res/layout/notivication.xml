@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  >
+  <TextView
+  android:id="@+id/notification_coursename"
+  android:textSize="20sp"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:text="课程:"
+  >
+  </TextView>
+  <TextView
+  android:id="@+id/notification_teacher"
+  android:textSize="20sp"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:text="老师:"
+  >
+  </TextView>
+  <TextView
+  android:id="@+id/notification_location"
+  android:textSize="20sp"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  >
+  </TextView>
+   <TextView
+  android:id="@+id/notification_email"
+  android:textSize="20sp"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  >
+  </TextView>
+</LinearLayout>

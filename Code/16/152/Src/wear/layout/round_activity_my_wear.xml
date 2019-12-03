@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MyActivityWear"
+    tools:deviceIds="wear_round">
+   <LinearLayout style="@style/layout">
+      <Button
+          android:id="@id/one"
+          android:text="@string/one"
+          style="@style/btn"
+          android:background="@drawable/one"/>
+      <Button
+          android:id="@id/two"
+          android:text="@string/two"
+          style="@style/btn"
+          android:background="@drawable/two"/>
+   </LinearLayout>
+   <LinearLayout style="@style/layout">
+      <Button
+          android:id="@id/three"
+          android:text="@string/three"
+          style="@style/btn"
+          android:background="@drawable/three"/>
+      <Button
+          android:id="@id/four"
+          android:text="@string/four"
+          style="@style/btn"
+          android:background="@drawable/four"/>
+   </LinearLayout>
+</LinearLayout>

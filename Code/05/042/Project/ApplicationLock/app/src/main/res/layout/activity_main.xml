@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/welcome_bg">
+    
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        
+
+        <TextView
+            android:id="@+id/gesturepwd_unlock_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mp_10"
+            android:gravity="center_horizontal"
+            android:shadowColor="#b3ffffff"
+            android:shadowRadius="1.0"
+            android:text="@string/gesture_drawPwd"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/f_16" />
+
+        <TextView
+            android:id="@+id/gesturepwd_unlock_failtip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mp_10"
+            android:gravity="center_horizontal"
+            android:shadowColor="#b3ffffff"
+            android:shadowRadius="1.0"
+            android:text="@string/gesturepwd_unlock"
+            android:textColor="@android:color/white"
+            android:textSize="12.0sp"
+            android:visibility="invisible" />
+
+        <com.mingrisoft.applicationlock.LockPatternView
+            android:id="@+id/gesturepwd_unlock_lockview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/mp_20"
+            android:layout_weight="3" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="清除"/>
+</LinearLayout>

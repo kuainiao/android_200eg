@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">文件查看器</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_cancel">取消</string>
+    <string name="menu_text_phone">手机</string>
+    <string name="menu_text_sd">SD卡</string>
+    <string name="menu_text_exit">退出</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="腾讯新闻"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="童蕾一袭红裙亮相盛典 优雅大气又不失明朗妩媚"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_below="@+id/content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/thumbnail_pic_s"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/thumbnail_pic_s02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/thumbnail_pic_s03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

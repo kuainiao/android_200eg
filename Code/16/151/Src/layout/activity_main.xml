@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.mingrisoft.notification.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/one"
+        style="@style/item">
+        <ImageView
+            android:src="@mipmap/one"
+            style="@style/image" />
+        <LinearLayout style="@style/child">
+            <TextView
+                android:text="android从入门到精通"
+                style="@style/title" />
+            <TextView
+                android:text="@string/one"
+                style="@style/message" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/two"
+        style="@style/item">
+        <ImageView
+            android:src="@mipmap/two"
+            style="@style/image" />
+        <LinearLayout style="@style/child">
+            <TextView
+                android:text="java编程词典"
+                style="@style/title" />
+            <TextView
+                android:text="@string/two"
+                style="@style/message" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/three"
+        style="@style/item">
+        <ImageView
+            android:src="@mipmap/three"
+            style="@style/image" />
+        <LinearLayout style="@style/child">
+            <TextView
+                android:text="Java从入门到精通"
+                style="@style/title" />
+            <TextView
+                android:text="@string/three"
+                style="@style/message" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

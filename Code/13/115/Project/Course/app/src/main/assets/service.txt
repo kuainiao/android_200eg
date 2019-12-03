@@ -1,0 +1,4 @@
+//first
+http://www.mingrisoft.com/Index/API/getAllCourse/rows/100
+//second
+http://www.mingrisoft.com/Index/API/getSystemCourseInfo/course_id/64/user_id/1

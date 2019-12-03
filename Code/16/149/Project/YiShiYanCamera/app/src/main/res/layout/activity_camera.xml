@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tutk.IOTC.Monitor
+        android:id="@+id/monitor"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <TextView
+        android:id="@+id/connect_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp"
+        android:layout_marginTop="15dp"
+        android:text="连接状态：连接中..."
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/top_btn"
+                android:layout_width="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="40dp"
+                android:background="@drawable/up"/>
+
+            <Button
+                android:id="@+id/down_btn"
+                android:layout_width="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="40dp"
+                android:background="@drawable/down"/>
+
+            <Button
+                android:id="@+id/left_btn"
+                android:layout_width="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="40dp"
+                android:background="@drawable/left" />
+
+            <Button
+                android:id="@+id/right_btn"
+                android:layout_width="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="40dp"
+                android:background="@drawable/right" />
+
+            <Button
+                android:id="@+id/voice_btn"
+                android:layout_width="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="40dp"
+                android:background="@drawable/no_voice"/>
+            <Button
+                android:id="@+id/btn_snapshot"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/camera"/>
+            <Button
+                android:id="@+id/btn_videotape"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/video"/>
+            <Button
+                android:id="@+id/btn_rotate_hor"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/left_right" />
+            <Button
+                android:id="@+id/btn_rotate_ver"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/up_down" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

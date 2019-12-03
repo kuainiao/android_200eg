@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/vertical"
+        android:title="纵向列表效果" />
+    <item
+        android:id="@+id/horizontal"
+        android:title="横向列表效果" />
+    <item android:id="@+id/grid"
+        android:title="表格效果"/>
+</menu>

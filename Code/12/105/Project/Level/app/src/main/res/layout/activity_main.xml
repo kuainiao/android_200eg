@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.mingrisoft.level.MainActivity">
+    <!--自定义控件，绘制圆盘和小球-->
+    <view.MyView
+        android:id="@+id/myview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--左侧角度值-->
+    <TextView
+        android:id="@+id/text_lx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingRight="200dp"
+        android:paddingBottom="20dp"
+        android:textColor="#FF0066" />
+    <!--右侧角度值-->
+    <TextView
+        android:id="@+id/text_rx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="200dp"
+        android:paddingBottom="20dp"
+        android:textColor="#FF0066" />
+    <!--顶部角度值-->
+    <TextView
+        android:id="@+id/text_ty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="200dp"
+        android:paddingLeft="30dp"
+        android:textColor="#FF0066" />
+
+    <TextView
+        android:id="@+id/text_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="200dp"
+        android:paddingLeft="30dp"
+        android:textColor="#FF0066" />
+</FrameLayout>

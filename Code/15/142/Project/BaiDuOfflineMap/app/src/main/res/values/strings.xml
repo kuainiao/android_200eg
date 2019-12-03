@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">离线地图</string>
+    <string name="text_title">已下载城市</string>
+    <string name="text_manage">下载管理</string>
+    <string name="text_progress">已下载:--</string>
+    <string name="et_hint">输入省或市的名称</string>
+    <string name="text_number">城市ID：</string>
+</resources>

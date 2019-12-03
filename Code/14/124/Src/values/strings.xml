@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">短信作弊器</string>
+    <string name="explain">注：只有将本软件设置成默认的短信程序才可使用此功能，否则请先将本软件设置成默认短信程序。“----请合理使用该软件，请勿用该软件做不正当的事情----”</string>
+</resources>

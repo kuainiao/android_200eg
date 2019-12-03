@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mingrisoft.alarmclock.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/back_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+        <ImageView
+
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/colon" />
+
+        <TextView
+
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="12 30"
+            android:textColor="@android:color/white"
+            android:textSize="50sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/check_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check_mon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mon"
+            android:button="@null"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/check_tues"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/two"
+            android:button="@null"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/check_wed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/three"
+            android:button="@null"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/check_thur"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/four"
+            android:button="@null"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/check_fri"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/five"
+            android:button="@null"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/check_sat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sex"
+            android:button="@null"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/check_sun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/seven"
+            android:button="@null"
+            android:checked="false" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/check_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ok" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bk">
+
+    </View>
+
+    <ImageView
+        android:id="@+id/wind_fan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginRight="13dp"
+        android:layout_toLeftOf="@+id/relativeLayout"
+        android:layout_toStartOf="@+id/relativeLayout"
+        android:src="@drawable/wind_fan" />
+</RelativeLayout>

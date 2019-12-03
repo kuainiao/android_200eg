@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">语音打电话</string>
+    <string name="show">点击电话按钮进行识别，说完后再次点击按钮，等待系统响应即可。      请说“打电话给某某”，如“打电话给老爸”</string>
+</resources>

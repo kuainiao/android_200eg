@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--图标-->
+    <attr name="icon" format="reference"></attr>
+    <!--渐变颜色-->
+    <attr name="color" format="color"></attr>
+    <!--文本信息-->
+    <attr name="text" format="string"></attr>
+    <!--文字大小-->
+    <attr name="text_size" format="dimension"></attr>
+
+    <declare-styleable name="ChangeIcon">
+        <attr name="icon"></attr>
+        <attr name="color"></attr>
+        <attr name="text"></attr>
+        <attr name="text_size"></attr>
+    </declare-styleable>
+
+</resources>

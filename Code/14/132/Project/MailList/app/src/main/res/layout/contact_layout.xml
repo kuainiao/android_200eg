@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--横向搜索-->
+    <com.mingrisoft.maillist.tool.ClearEditText
+        android:id="@+id/filter_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/enter_kuang"
+        android:hint="请输入关键字"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textSize="15.0dip" />
+    <!--加载联系人布局-->
+    <FrameLayout
+        android:id="@+id/content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <!--联系人列表-->
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:divider="@null" />
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+        <!--竖向索引-->
+        <com.mingrisoft.maillist.tool.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+</LinearLayout>

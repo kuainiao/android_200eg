@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设置动画效果从相对与本身减去一个
+本身的高度开始动画，到图像完全显示结束
+动画时间为3000ms
+-->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromYDelta="-100%" android:toYDelta="0" android:duration="3000"/>

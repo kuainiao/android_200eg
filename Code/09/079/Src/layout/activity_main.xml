@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mingrisoft.changepicture.MainActivity">
+    <ImageView
+        android:id="@+id/image_one"
+        android:src="@mipmap/one"
+        style="@style/image" />
+    <ImageView
+        android:id="@+id/image_two"
+        android:src="@mipmap/two"
+        style="@style/image" />
+    <ImageView
+        android:id="@+id/image_three"
+        android:src="@mipmap/three"
+        style="@style/image" />
+    <ImageView
+        android:id="@+id/image_four"
+        android:src="@mipmap/four"
+        style="@style/image" />
+    <ImageView
+        android:id="@+id/image_five"
+        android:src="@mipmap/five"
+        style="@style/image" />
+    <ImageButton
+        android:id="@+id/last"
+        android:src="@mipmap/last"
+        style="@style/imagebtn" />
+    <ImageButton
+        android:id="@+id/next"
+        android:src="@mipmap/next"
+        android:layout_alignParentRight="true"
+        style="@style/imagebtn" />
+</RelativeLayout>

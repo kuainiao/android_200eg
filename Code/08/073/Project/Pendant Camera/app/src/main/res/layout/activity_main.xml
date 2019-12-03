@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrkj.sample_76.MainActivity">
+    <!-- 显示预览的图像 -->
+    <SurfaceView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- 绘制人脸识别框 -->
+    <SurfaceView
+        android:id="@+id/face"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- 用于切换挂件-->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:scrollbars="none"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@android:color/holo_blue_light">
+            <ImageButton
+                android:id="@+id/cry_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@mipmap/eye1"/>
+            <ImageButton
+                android:id="@+id/cat_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@mipmap/cat1"/>
+            <ImageButton
+                android:id="@+id/hat_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/hat"
+                android:background="@null"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dp"
+                android:textSize="16sp"/>
+            <ImageButton
+                android:id="@+id/beard_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/beard"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dp"
+                android:background="@null"
+                android:textSize="16sp"/>
+            <ImageButton
+                android:id="@+id/glasses_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@mipmap/glasses"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dp"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <!--行布局-->
+    <RelativeLayout
+        android:id="@+id/box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp">
+        <!--显示图标-->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher" />
+        <!--卸载按钮-->
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="66dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_selector"
+            android:text="卸载"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <!--文字部分-->
+        <LinearLayout
+            android:id="@+id/textbox"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_toLeftOf="@id/btn"
+            android:layout_toRightOf="@id/logo"
+            android:orientation="vertical">
+            <!--显示应用名称-->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="千千静听"
+                android:textSize="16sp" />
+            <!--显示应用版本-->
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="版本: 1.0"
+                android:textColor="#999"
+                android:textSize="12sp" />
+            <!--显示应用大小-->
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="大小: 18.05M"
+                android:textColor="#999"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

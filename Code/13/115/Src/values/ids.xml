@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标题栏的id -->
+    <item name="title_bar" type="id"/>
+    <item name="back_btn" type="id"/>
+    <item name="title_name" type="id"/>
+    <!-- 列表的id -->
+    <item name="class_list" type="id"/>
+    <!-- item的id -->
+    <item name="show_pic" type="id"/>
+    <item name="show_title" type="id"/>
+    <item name="show_teacher" type="id"/>
+    <item name="show_time" type="id"/>
+    <!-- 第二个页面 -->
+    <item name="second_title" type="id"/>
+    <item name="second_top" type="id"/>
+    <item name="second_bottom" type="id"/>
+    <item name="second_time" type="id"/>
+    <item name="second_people" type="id"/>
+    <item name="second_image" type="id"/>
+    <item name="second_name" type="id"/>
+    <item name="second_about" type="id"/>
+    <item name="second_message" type="id"/>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mingrisoft.wordcode.MainActivity">
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发帖"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="start"
+        android:textColor="#000000"
+        android:text="请输入验证码完成发帖"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="验证码："
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:textColor="#000000"/>
+        <include layout="@layout/input_layout"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/image_code"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/show_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="看不清？"
+            android:clickable="true"
+            android:textColor="@drawable/text"
+            android:layout_marginLeft="30dp" />
+    </LinearLayout>
+    <include layout="@layout/select_layout"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="start"
+        android:textColor="#000000"
+        android:text="看又来一个！字不咋地念着不错！"/>
+    <TextView
+        android:id="@+id/show_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="验证码"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textColor="#000000"/>
+</LinearLayout>

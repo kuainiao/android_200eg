@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--默认的显示是RatingBar的样式-->
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/start_off"></item>
+    <!--与用户交互式（选中评价等级）时的过度样式-->
+    <item
+        android:id="@android:id/secondaryProgress"
+        android:drawable="@drawable/start_off"></item>
+    <!--当选中这的等级的时候RatingBar的样式-->
+    <item
+        android:id="@android:id/progress"
+        android:drawable="@drawable/start_on"></item>
+</layer-list>
+

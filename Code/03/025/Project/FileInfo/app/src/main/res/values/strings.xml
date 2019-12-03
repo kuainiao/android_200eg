@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">保存信息到SD卡</string>
+    <string name="fileName">文件名</string>
+    <string name="content">文件内容</string>
+    <string name="save">保存</string>
+    <string name="saveToSDCard">保存数据到SD卡</string>
+    <string name="read">读取数据</string>
+    <string name="fileSaveException">文件保存出现异常</string>
+    <string name="sdCardException">SD卡不存在，或者写保护</string>
+    <string name="fileSaveSuccess">文件保存成功</string>
+</resources>

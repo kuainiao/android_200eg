@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator">
+    <!-- 透明渐变
+        duration：动画时间
+        fromAlpha：开始的透明度
+        toAlpha：结束的透明度
+    -->
+    <alpha
+        android:duration="2000"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+    <!-- 缩放渐变
+        duration：动画时间
+        fromXScale：横向缩放开始值
+        fromYScale：纵向缩放开始值
+        pivotX：缩放中心X
+        pivotY：缩放中心Y
+        toXScale：横向缩放结束值
+        toYScale：纵向缩放结束值
+     -->
+    <scale
+        android:duration="2000"
+        android:fromXScale="0.1"
+        android:fromYScale="0.1"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />
+</set>

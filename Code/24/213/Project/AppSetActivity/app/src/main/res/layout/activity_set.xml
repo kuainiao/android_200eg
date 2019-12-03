@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:text="设置"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="bottom|left"
+        android:paddingLeft="10dip"
+        android:text="@string/news_notice"
+        android:textColor="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/accept_news"
+            android:textSize="13sp" />
+
+        <com.mingrisoft.appsetactivity.SwitchButton
+            android:id="@+id/switch_accept_news"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp">
+
+        </com.mingrisoft.appsetactivity.SwitchButton>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_sound"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:text="@string/sound"
+            android:textSize="13sp" />
+
+        <com.mingrisoft.appsetactivity.SwitchButton
+            android:id="@+id/switch_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp">
+
+        </com.mingrisoft.appsetactivity.SwitchButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shock"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:text="@string/shock"
+            android:textSize="13sp" />
+
+        <com.mingrisoft.appsetactivity.SwitchButton
+            android:id="@+id/switch_shock"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp">
+
+        </com.mingrisoft.appsetactivity.SwitchButton>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="bottom|left"
+        android:paddingLeft="10dp"
+        android:text="@string/chat"
+        android:textColor="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:text="@string/loundspeaker"
+            android:textSize="13sp" />
+
+        <com.mingrisoft.appsetactivity.SwitchButton
+            android:id="@+id/switch_loundspeaker"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp">
+
+        </com.mingrisoft.appsetactivity.SwitchButton>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="bottom|left"
+        android:paddingLeft="10dp"
+        android:text="自定义设置"
+        android:textColor="@android:color/darker_gray" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:layout_marginTop="1dp">
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="闹钟铃声"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="爱要坦荡荡"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginRight="10dp"
+        android:drawableRight="@mipmap/right"/>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        >
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话铃声"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="壁咚"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@mipmap/right"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="短信铃声"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Fadeln"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@mipmap/right"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个性化设置"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@mipmap/right"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度设置"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@mipmap/right"/>
+    </RelativeLayout>
+</LinearLayout>

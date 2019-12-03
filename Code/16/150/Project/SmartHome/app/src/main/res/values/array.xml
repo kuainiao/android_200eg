@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="imgArray">
+        <item>@mipmap/master_bed_room_item</item>
+        <item>@mipmap/second_room_item</item>
+        <item>@mipmap/living_room_item</item>
+        <item>@mipmap/study_room_item</item>
+        <item>@mipmap/toilet_item</item>
+        <item>@mipmap/kitchen_item</item>
+    </string-array>
+    <string-array name="imgBackGround">
+        <item>@mipmap/master_bed_room</item>
+        <item>@mipmap/second_room</item>
+        <item>@mipmap/living_room</item>
+        <item>@mipmap/study_room</item>
+        <item>@mipmap/toilet</item>
+        <item>@mipmap/kitchen</item>
+    </string-array>
+</resources>

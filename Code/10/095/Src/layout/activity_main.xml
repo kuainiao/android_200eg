@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <view.RecordView
+            android:id="@+id/vrvVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            app:is_open_camera="true"
+            app:out_format="of_mp4"
+            app:record_max_time="10"
+            app:video_encoding_bit_rate="1048576"
+            app:video_frame_rate="10"
+            app:x_px="320"
+            app:y_px="240" />
+
+        <TextView
+            android:id="@+id/tv_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="#99cccccc"
+            android:padding="2dp"
+            android:text="上滑取消"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:background="#99FF1493"
+            android:padding="2dp"
+            android:text="松开取消"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <view.RecordProgress
+            android:id="@+id/rp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btnVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="按住拍"
+            android:textColor="#1AAD19"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

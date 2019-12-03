@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="100dp"
+    android:background="#ff333333"
+    >
+    <TextView
+
+        android:gravity="center"
+        android:id="@+id/alarm_time"
+        android:layout_marginTop="30dp"
+        android:text="18  45"
+        android:textColor="#ffffffff"
+        android:textSize="42dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="134dp"
+        android:layout_height="51dp" />
+    <ImageView
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="85dp"
+        android:id="@+id/alarm_colon"
+        android:src="@drawable/colon"
+        android:layout_width="8dp"
+        android:layout_height="28dp" />
+
+    <com.mingrisoft.alarmclock.item.SwitchButton
+        android:focusable="false"
+        android:layout_marginRight="39dp"
+        android:id="@+id/alarm_enable"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/alarm_time"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="39dp" />
+
+<TextView
+    android:id="@+id/alarm_date"
+    android:text="一、二、三、四、五、六、日"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="10dp"
+    android:textColor="@android:color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+</RelativeLayout>

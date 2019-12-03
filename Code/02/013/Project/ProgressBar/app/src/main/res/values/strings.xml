@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">进度条样式集合</string>
+    <string name="anim">动画进度条</string>
+    <string name="color">颜色进度条</string>
+    <string name="icon">图片进度条</string>
+    <string name="loading">正在加载数据请稍后……</string>
+</resources>

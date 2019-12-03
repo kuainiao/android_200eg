@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:lotter="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg"
+              android:gravity="center"
+              android:orientation="vertical"
+              tools:context="com.mingrisoft.guaguale.MainActivity">
+<!--将区容器-->
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="110dp"
+        android:background="@drawable/jq"
+        android:gravity="center">
+<!--刮刮乐刮奖区控件-->
+        <com.mingrisoft.guaguale.util.MyView
+            android:id="@+id/lottery_myview"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:background="@drawable/jq"
+            android:gravity="center"
+            android:textSize="25sp"
+            lotter:height="100dp"
+            lotter:widget="300dp">
+        </com.mingrisoft.guaguale.util.MyView>
+    </LinearLayout>
+<!--再抽一次按钮-->
+    <Button
+        android:id="@+id/again_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn"
+        android:onClick="onAB"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/again_lotter"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>

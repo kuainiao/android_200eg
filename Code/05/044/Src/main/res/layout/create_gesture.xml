@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+    
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dip"
+            
+            android:text="@string/prompt_gesture_name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <EditText
+            android:id="@+id/gesture_name"
+            android:layout_width="0dip"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+
+            android:maxLength="40"
+            android:singleLine="true" />
+
+    </LinearLayout>
+    
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestures_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+
+        android:gestureStrokeType="multiple" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/done"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:enabled="false"
+
+            android:onClick="addGesture"
+            android:text="@string/button_done" />
+    
+        <Button
+            android:background="@android:color/holo_blue_bright"
+            android:textColor="@android:color/white"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:onClick="cancelGesture"
+            android:text="@string/button_discard" />
+
+    </LinearLayout>
+    
+</LinearLayout>

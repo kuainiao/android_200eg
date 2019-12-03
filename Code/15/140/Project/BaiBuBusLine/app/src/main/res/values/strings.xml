@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">公交线路查询</string>
+    <string name="text_stay">在</string>
+    <string name="text_beijing">北京</string>
+    <string name="text_city">市内找</string>
+    <string name="text_number">717</string>
+    <string name="text_bus">公交车</string>
+</resources>

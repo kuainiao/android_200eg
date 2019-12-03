@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <include layout="@layout/line" />
+        <TextView
+            android:id="@+id/chuanyi"
+            tools:text="穿衣指数"
+            style="@style/text_jianyi" />
+        <TextView
+            android:id="@+id/chuanyi_jy"
+            tools:text="建议"
+            style="@style/text_jianyi" />
+        <include layout="@layout/line" />
+        <TextView
+            android:id="@+id/ganmao"
+            tools:text="感冒指数"
+            style="@style/text_jianyi" />
+        <TextView
+            android:id="@+id/ganmao_jy"
+            tools:text="建议"
+            style="@style/text_jianyi" />
+        <include layout="@layout/line" />
+        <TextView
+            android:id="@+id/kongtiao"
+            tools:text="空调指数"
+            style="@style/text_jianyi" />
+        <TextView
+            android:id="@+id/kongtiao_jy"
+            tools:text="建议"
+            style="@style/text_jianyi" />
+        <include layout="@layout/line" />
+        <TextView
+            android:id="@+id/xiche"
+            tools:text="洗车指数"
+            style="@style/text_jianyi" />
+        <TextView
+            android:id="@+id/xiche_jy"
+            tools:text="建议"
+            style="@style/text_jianyi" />
+        <include layout="@layout/line" />
+        <TextView
+        android:id="@+id/yundong"
+        tools:text="运动指数"
+        style="@style/text_jianyi" />
+        <TextView
+            android:id="@+id/yundong_jy"
+            tools:text="建议"
+            style="@style/text_jianyi" />
+        <include layout="@layout/line" />
+        <TextView
+            android:id="@+id/ziwaixian"
+            tools:text="紫外线指数"
+            style="@style/text_jianyi" />
+        <TextView
+            android:id="@+id/ziwaixian_jy"
+            tools:text="建议"
+            style="@style/text_jianyi" />
+        <include layout="@layout/line" />
+</LinearLayout>

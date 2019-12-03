@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mingrisoft.musicplayer.avtivity.MusicActivity">
+    <include layout="@layout/title_layout"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/music_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorList"/>
+        <me.wcy.lrcview.LrcView
+            android:id="@+id/music_lrc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:lrcAnimationDuration="1000"
+            app:lrcCurrentTextColor="@color/colorYellow"
+            app:lrcDividerHeight="24dp"
+            app:lrcLabel="找不到歌词(&gt;_&lt;)"
+            app:lrcNormalTextColor="@android:color/darker_gray"
+            app:lrcPadding="16dp"
+            app:lrcTextSize="18sp"
+            android:background="@color/colorWindow"/>
+    </RelativeLayout>
+    <include layout="@layout/bottom_layout"/>
+</LinearLayout>

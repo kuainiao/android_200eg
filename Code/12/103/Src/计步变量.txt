@@ -1,0 +1,15 @@
+    public static int CURRENT_SETP;      //步数
+    public static float SENSITIVITY = 8; // SENSITIVITY灵敏度
+
+    private float mLastValues[] = new float[3 * 2];
+    private float mScale[] = new float[2];
+    private float mYOffset;//位移
+    private static long mEnd = 0;//运动相隔时间
+    private static long mStart = 0;//运动开始时间
+    /**
+     * 最后加速度方向
+     */
+    private float mLastDirections[] = new float[3 * 2];//最后的方向
+    private float mLastExtremes[][] = {new float[3 * 2], new float[3 * 2]};
+    private float mLastDiff[] = new float[3 * 2];
+    private int mLastMatch = -1;

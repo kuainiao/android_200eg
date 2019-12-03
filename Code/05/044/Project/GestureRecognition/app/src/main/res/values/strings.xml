@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">手势打电话</string>
+    <string name="label_create_gesture">创建一个手势</string>
+    <string name="button_add">添加手势</string>
+    <string name="button_reload">重装</string>
+    <string name="button_discard">取消</string>
+    <string name="button_done">完成</string>
+    <string name="button_perform">执行</string>
+    <string name="prompt_gesture_name">电话号码</string>
+    <string name="error_missing_name">你必须输入一个电话号码</string>
+    <string name="save_success">手势保存在 %s</string>
+    <string name="rename_action">OK</string>
+    <string name="cancel_action">取消</string>
+    <string name="gestures_loading">手势加载中...</string>
+    <string name="gestures_empty">没有手势</string>
+    <string name="gestures_activity">手势</string>
+    <string name="gestures_rename">重命名</string>
+    <string name="gestures_delete">删除</string>
+    <string name="gestures_delete_success">手势删除</string>
+    <string name="gestures_rename_title">手势重命名</string>
+    <string name="gestures_rename_label">手势的名字</string>
+    <string name="gestures_error_loading">无法加载% s。请确保您有可用的存储空间。</string>
+
+</resources>

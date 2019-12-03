@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--标题图片-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/left_title">
+
+    </LinearLayout>
+    <!--菜单部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/left_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg"
+                android:drawableLeft="@drawable/img1"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/text_1"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg"
+                android:drawableLeft="@drawable/img2"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/text_2"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg"
+                android:drawableLeft="@drawable/img3"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/text_3"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg"
+                android:drawableLeft="@drawable/img4"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/text_4"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg"
+                android:drawableLeft="@drawable/img5"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/text_5"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/btn_bg"
+                android:drawableLeft="@drawable/img6"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/text_6"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg"
+                android:drawableLeft="@drawable/img7"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/text_7"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

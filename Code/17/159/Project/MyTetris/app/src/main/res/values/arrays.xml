@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_image">
+        <item >背景1</item>
+        <item >背景2</item>
+        <item >背景3</item>
+    </string-array>
+    <string-array name="list_image_value">
+        <item >back1.jpg</item>
+        <item >back2.jpg</item>
+        <item >back3.jpg</item>
+    </string-array>
+    
+</resources>

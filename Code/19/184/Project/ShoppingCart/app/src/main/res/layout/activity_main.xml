@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+<!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#B22626"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+           />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view"
+        android:layout_below="@+id/title"
+        android:orientation="horizontal">
+
+        <!--菜单列表-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <!--底部红色线条-->
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/list_bt"
+        android:background="@color/color_fa5858" />
+
+    <RelativeLayout
+        android:id="@+id/list_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+        <!--显示总计钱数-->
+        <TextView
+            android:id="@+id/total_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65dp"
+            android:text="￥0"
+            android:textColor="@color/color_2d2d2d" />
+
+        <View
+            android:id="@+id/m_listview"
+            android:layout_width="1dp"
+            android:layout_height="26px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/total_tv"
+            android:background="@color/color_f2f2f2" />
+        <!--显示送餐费用-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/m_listview"
+            android:text="另需送餐费￥4"
+            android:textColor="@color/color_898787" />
+        <!--点餐按钮-->
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="#B22626"
+            android:text="点餐"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/car_layout"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp">
+        <!--购物车图标-->
+        <ImageView
+            android:id="@+id/car"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/shop_car_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sum_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/car_layout"
+        android:layout_alignTop="@+id/car_layout"
+        android:background="@drawable/selected_quantity_bg"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="0"
+        android:textColor="@color/white" />
+</RelativeLayout>

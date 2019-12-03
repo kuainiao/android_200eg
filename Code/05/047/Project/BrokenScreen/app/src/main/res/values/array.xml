@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="imgArray">
+    <item>@mipmap/img1</item>
+    <item>@mipmap/img2</item>
+    <item>@mipmap/img3</item>
+</string-array>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">微信下面选项卡</string>
+    <string name="icon_text1">微信</string>
+    <string name="icon_text2">通讯录</string>
+    <string name="icon_text3">发现</string>
+    <string name="icon_text4">我</string>
+
+</resources>
+

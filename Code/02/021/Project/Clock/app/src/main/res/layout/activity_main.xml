@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bj"
+              android:gravity="center"
+              android:padding="40dp"
+              tools:context="com.mingrisoft.clock.MainActivity">
+    <!--钟表控件-->
+    <com.mingrisoft.clock.MyClock
+        android:id="@+id/analog_appwidget"
+        style="@style/AppWidget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
